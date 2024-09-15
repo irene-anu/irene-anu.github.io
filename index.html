@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="heading-container">
+                <h1>Welcome to Your Guide Around Glasgow</h1>
+            </div>
+            <nav class="nav-container">
+                <ul>
+                    <li><a href="#restaurants" class="nav-button">Restaurants</a></li>
+                    <li><a href="#attractions" class="nav-button">Attractions</a></li>
+                    <li><a href="#events" class="nav-button">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section id="restaurants">
+            <h2>Best Places to Eat</h2>
+            <label for="cuisine-filter">Filter by Cuisine:</label>
+            <select id="cuisine-filter" onchange="filterCuisine()">
+                <option value="all">All</option>
+                <option value="scottish">Scottish</option>
+                <option value="italian">Italian</option>
+                <option value="lebanese">Lebanese</option>
+                <!-- Add more options as needed -->
+            </select>
+            <br><br>
+            <article class="restaurant" data-cuisine="scottish">
+                <h3>Ubiquitous Chip</h3>
+                <h4>Comtemporary Scottish Food</h4>
+                <img src="images/ubiquitous_chip.jpg" alt="Ubiquitous Chip" style="width:50%; height: 250px;">
+                <p>The Chip (as it's known locally) has been a Glasgow institution since 1971 - and they’ve not let standards slip yet.
+                    From doorstop sandwiches for lunch to refined Scottish food for dinner, you’ll find something for every meal of the day at this Ashton Lane legend - and taking a seat among the ferns and climbing plants of the courtyard restaurant is something of a do-before-you-die moment, in Glasgow west end terms.
+                    The Ubiquitous Chip’s own venison haggis - made in-house - calls to us, but you’re guaranteed a good feed no matter which menu you’re looking at, from brasserie breakfast to full-on celebration meal.</p>
+            </article>
+            <article class="restaurant" data-cuisine="italian">
+                <h3>Paesano</h3>
+                <h4>Traditional Napoletana Pizza</h4>
+                <img src="images/paesano.jpg" alt="Paesano" style="width:50%; height:250px;">
+                <p>Without doubt Glasgow's most popular pizza joint, the queues outside Paesano continue to appear almost five years since this much-loved Miller Street venue first threw open its doors.
+                    Fresh ingredients, a simple menu and a team of Neapolitan specialists are the reasons why this Merchant City restaurant is so revered.
+                    Such is its success, Paesano West End soon followed in 2017, while Sugo - Paesano's pasta cousin - opened late last year.</p>
+            </article>
+            <article class="restaurant" data-cuisine="lebanese">
+                <h3>Beirut Star</h3>
+                <h4>Authentic Lebanese Food</h4>
+                <img src="images/beirut_star.webp" alt="Beirut Star" style="width:50%; height: 250px;">
+                <p>You’ve tried Lebanese food before, even if you didn’t recognise it - but you’ve never had shawarma, falafel or creamy humous like that on offer at Beirut Star in Cessnock.
+                    The takeaway counter is often queued around the block since word got out about the not-so-hidden gem - but you can sit in if you fancy ordering up a feast to share (or not, we’re not judging).
+                    If we give you one scrap of menu advice, it’s this: try the mutabbal (baba ghanouj) with as much flatbread as you can grab. Snatch it from the hands of your beloved if you must. Then thank us later - because it's utterly glorious.</p>
+            </article>
+            <!-- Add more restaurant articles here -->
+        </section>
+        <section id="attractions">
+            <h2>Top Attractions</h2>
+            <article>
+                <h3>Glasgow Botanic Gardens</h3>
+                <img src="images/botanics.jpg" alt="Attraction Name" style="width:50%; height: 250px;">
+                <p>Wander 50 acres of leafy parkland in the heart of the west end at Glasgow Botanic Gardens. Visit Kibble Palace, a magnificent wrought iron-framed Victorian glasshouse filled with exotic tree ferns. You can also step inside the 11 other balmy glasshouses to see rare orchids and a collection of begonias. If you feel like stretching your legs, you can follow the path to reach the riverside walk. This provides a picturesque route through the city towards Kelvingrove Park and the art gallery and museum.</p>
+            </article>
+            <article>
+                <h3>Glasgow Science Centre</h3>
+                <img src="images/science_center.webp" alt="Attraction Name" style="width:50%; height: 250px;">
+                <p>Rated 5 stars by VisitScotland, providing programs of entertaining Science theatre, Planetarium, and around 300 hands-on interactive science exhibits over three floors, to introduce science to everyone. "BodyWorks" examines the science behind human health and well-being, "Powering the Future" the future challenges and solutions in our energy-hungry world, and the digital planetarium allows visitors to 'leave earth' and travel through the cosmos. Planetarium shows have a £3.50 add-on charge. A shop & cafe are free to access, as are outdoor exhibits set in landscaped surroundings of a Fibonacci Garden and wetland moat. The centre is also home to an IMAX theatre, Newton Flight Academy, and Glasgow Tower. Schools and outreach programs extend the Centre's work into the community. The Centre is a registered charity with surpluses returned to the education mission. Cycle stands, car parking & public transport links or a 15 minute walk along the Clyde from the City centre.</p>
+            </article>
+            <article>
+                <h3>Kelvingrove Art Gallery and Museum</h3>
+                <img src="images/kelvingrove.jpeg" alt="Attraction Name" style="width:50%; height: 250px;">
+                <p>Free Entry. Kelvingrove Art Gallery and Mu​seum is Scotland's most visited free attraction.​ With 22 themed, state-of-the-art galleries displaying an astonishing 8000 objects, the collections are extensive, wide-ranging and internationally-significant.</p>
+            </article>
+            <article>
+                <h3>The Necropolis</h3>
+                <img src="images/necropolis.jpg" alt="Attraction Name" style="width:50%; height: 250px;">
+                <p>The Necropolis, Glasgow's Victorian City of the Dead, is a vast and grand cemetery modeled on Père-Lachaise in Paris. Described as one of the most significant cemeteries in Europe, it is a major visitor attraction and patrolled by Park Rangers. Heritage Trail maps are available to guide the visitor to the memorials and tombs of some of Glasgow's most eminent citizens.</p>
+            </article>
+            <article>
+                <h3>University of Glasgow</h3>
+                <img src="images/uofg.jpeg" alt="Attraction Name" style="width:50%; height: 250px;">
+                <p>Take a fascinating tour of the University of Glasgow campus, and explore the University's stunning architecture (with over 100 listed buildings) and discover incredible stories from its 550 years of history. Guided campus tours are led by trained student guides and last for approximately one hour - you can find out more by visiting: boxoffice.src.gla.ac.uk/product/university-glasgow-tours. Other must-see attractions to visit on campus include: • The Hunterian Museum • The Hunterian Art Gallery (including The Charles Rennie Mackintosh House) • The Visitor Centre Shop for University merchandise and Scottish gifts (10% off with your tour ticket) • A selection of cafés and restaurants for coffee or a bite to eat</p>
+            </article>
+            <!-- Add more attraction articles here -->
+        </section>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>GlasGlow</h3>
+                <img src="images/glasglow.jpg" alt="Event Name" style="width:100%; height:auto;">
+                <p>Buckle up and discover ten epic worlds from BoneYard and CarnEvil to Clowntown and Haunted Hoose, cosy up at CampSite, meet our pumpkin pals at The Patch, get gooey at Marshmallowland, fly away at UP, face off in House of Mirrors and discover the magic of Halloween at GLOW!
+
+                    The show brings together amazing immersive sound and light displays, beautiful photo opportunities, a gourmet street food village, loads of unforgettable interactive moments and Marshmallowland, a cosy fairlylit nook dedicated to all things mallow, to create an incredible outdoor adventure inherently routed in Glasgow culture.
+                    <br><br>
+                    Fast Pass & Mallow tickets are back again this year, giving those with tickets access to a dedicated entrance plus a campfire classic marshmallow skewer and queue hops straight into the show’s legendary Marshmallowland.
+                    <br><br>
+                    Organisers are aiming to make GlasGLOW as accessible and inclusive as possible and will be hosting a Relaxed Session on Thurs 31st October at 4.45pm as well as welcoming the team from Pamis with their Changing Place toilets from the 31st of October to 2nd of November. Sensory guides, a quiet space and GLOW passes will also be available to help anyone with sensory sensitivities.
+                    <br><br>
+                    The trail will take around 50-70 minutes.
+                    The show is fully outdoors and suitable for all ages.
+                    This year's show has a few zones some may find a little scary - alternative paths are available.</p>
+            </article>
+            <!-- Add more event articles here -->
+        </section>
+        <section id="map">
+            <h2>Map of Glasgow</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23714.94910124344!2d-4.292055!3d55.860916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888469d3e3b3b3b%3A0x7b0b0b0b0b0b0b0b!2sGlasgow%2C%20UK!5e0!3m2!1sen!2s!4v1633023033030!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Your Local Guide. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
